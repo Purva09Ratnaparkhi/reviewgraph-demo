@@ -3,5 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Go base code.")
+    name := "John"
+    // Go vet issue: Printf format %d expects an integer but name is string
+    fmt.Printf("User Name: %d\n", name)
 }
